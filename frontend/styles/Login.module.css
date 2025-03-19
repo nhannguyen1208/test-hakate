@@ -1,0 +1,158 @@
+/* Container tổng */
+.container {
+  display: flex;
+  min-height: 10vh;
+  align-items: flex-start;   
+  justify-content: space-between;
+  padding: 1rem 1rem;      
+  background: #ffffff; 
+}
+
+
+.leftSection {
+  width: 10%;  
+  display: flexbox;            
+  justify-content: right;   
+  flex-direction: column;  
+  align-items: flex;
+  padding: 10rem;
+}
+
+.formContainer {
+  width: 380%;
+  max-width: 380px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  
+}
+
+.helloContainer {
+  text-align: center;          
+  margin-bottom: 1rem;
+}
+
+.helloText {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  background-color: #e4e2fb;
+  border-radius: 1000px;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.forgotLink {
+  color: #2f3e9e;
+  text-decoration: none;
+}
+.forgotLink:hover {
+  text-decoration: underline;
+}
+
+.loginBtn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #2f3e9e;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.loginBtn:hover {
+  background-color: #1c2d7d;
+}
+
+
+.rightSection {
+  width: 65%;              
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+
+.robotImage {
+  width: 50%;
+  max-width: 500px;        
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  align-self: center;
+}
+
+.hekateTitle {
+  font-size: 2.2rem;
+  color: #2f3e9e;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.infoBox {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #000;
+  margin-top: 1rem;
+}
+
+.infoBox ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+.infoBox li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .leftSection,
+  .rightSection {
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .formContainer {
+    margin-bottom: 2rem;
+  }
+
+  .robotImage {
+    max-width: 100px; 
+  }
+
+  .hekateTitle,
+  .infoBox {
+    text-align: center;
+  }
+}
